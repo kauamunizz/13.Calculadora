@@ -10,13 +10,13 @@ botoes.forEach(botao => {
     })
     igual.addEventListener('click', () => {
         resultado.innerText = eval(resultado.innerText);
-    })
+})
 })
 
 // function calcular() {
-//     let numeros = resultado.innerText
-//     eval(numeros);
-// }
-
-
+    //     let numeros = resultado.innerText
+    //     eval(numeros);
+    // }
+    
+    
 
