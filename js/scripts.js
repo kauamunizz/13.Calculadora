@@ -6,17 +6,13 @@ botoes.forEach(botao => {
         const resultado = document.getElementById('resultado');
     
         resultado.innerText += elemento.innerText;
-
     })
-    igual.addEventListener('click', () => {
+
+    document.getElementById('igual').addEventListener('click', () => {
         resultado.innerText = eval(resultado.innerText);
-})
-})
-
-// function calcular() {
-    //     let numeros = resultado.innerText
-    //     eval(numeros);
-    // }
+    })
     
-    
-
+    document.getElementById('del').addEventListener('click', () => {
+        resultado.innerText =  resultado.innerText.slice(0, resultado.innerText.length-1);
+    })
+})
